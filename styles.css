@@ -1,7 +1,7 @@
 body{
     background-color: #ffffff;
     width:100%;
-    margin:0 auto;
+    margin:0;
     padding:0;
 }
 
@@ -11,133 +11,52 @@ header
     height:3rem;
     display:flex;
     flex-wrap:wrap;
-
+    
 
     justify-content:space-between;
-
+    margin-top: -0.1rem;
 }
 
 header nav{
     height:100%;
     width:30%;
+    display:flex;
+    
+    justify-content: flex-end;
+    margin-right:3rem;
+    
 
 }
 
 
 nav ul{
-    display:flex;
+    display:inline-flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
 }
 
-
-header ul li{
-    list-style: none;
-}
-
-header img{
-    height:2.5rem;
-    width:auto;
-    padding-left:1em;
-}
-
-.filtres{
-    display:flex;
-    justify-content: space-between;
-    width:65%;
-    align-items: baseline;
-    padding-left:1rem;
-   flex-wrap:wrap;
-
-}
-
-
-
-
-.filtresbutton{
-
-    display:flex;
-    align-items:center;
-    border: rgba(100,149,237,0.47) 0.15rem solid;
-    border-radius: 50px;
-    justify-content: space-between;
-    height:2rem;
-    padding-top:0rem;
-    padding-bottom:0rem;
-    padding-left:0rem;
-    padding-right:1.5em;
-    overflow: hidden;
-
-
-
-}
-
-
-.filtresbutton i{
-
-    border-right: #6495ed 0.17rem solid;
-    border-radius: 50% 50%;
-    height:100%;
-    display:flex;
-    align-items: center;
-    padding-left:0.7rem;
-
-
-    padding-right: 0.3rem;
-    background-color: rgba(100,149,237,0.47);
-width:1.5em;
-    height: 150%;
-
-}
-
-.filtresbutton a{
-padding-left:1rem;
-}
-
-.fas {
-    color: #3a88fd;
-}
-
-
-
-footer{
+nav ul li{
     display: flex;
-    -ms-flex-align: start;
-    justify-content: flex-start;
-    margin-top: 1rem;
-    align-items:baseline;
-    padding-left:1rem;
-    background-color: #f2f2f2;
-
+justify-content: center;
+align-items: center;
 }
 
-footer ul li{
-    list-style: none;
-
+nav ul li a {
+    padding-top:0.35rem;
+    
 }
 
-footer .up{
-    display:flex;
-
-    flex-direction: column;
-
-    margin-right: 20%;
+nav ul li .p1 p{
+    color: black;
 }
 
-footer .up ul{
-display:flex;
-    flex-direction: column;
-    padding:0rem;
+nav ul li .p1 p:hover{
+   color: #3a88fd
 }
 
-footer .apropos{
-    padding-left: 2.5rem;
+nav ul li a:hover{
 
-}
-
-
-footer ul{
-
+border-top:0.50rem solid #3a88fd;
 }
 
 nav a {
@@ -147,6 +66,166 @@ nav a {
     font-family: Verdana;
     font-size:0.8rem;
 }
+
+nav a:visited {
+    text-decoration: overline;
+}
+
+.logo{
+  margin-top:0.4rem; 
+}
+
+
+header ul li{
+    list-style: none;
+    padding-left:2rem;
+}
+
+header img{
+    height:2.5rem;
+    width:auto;
+    padding-left:2.2rem;
+}
+
+.filtres{
+    display:flex;
+    
+    width:65%;
+    align-items: baseline;
+    padding-left:2.2rem;
+   flex-wrap:wrap;
+   align-content: flex-start;
+   
+   
+}
+
+p{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.filtres p{
+    
+    font-size: 0.9rem;
+    color:black;
+    
+
+}
+
+
+
+
+.filtresbutton{
+
+
+border:rgb(222, 235, 255) solid 0.15rem;
+display:inline-flex;
+border-radius:1.1rem;
+align-items: center;
+height:2rem;
+overflow: hidden;
+background-color: #ffffff;
+margin-left:1rem;
+
+
+
+
+}
+
+
+
+.filtresbutton i{
+
+                                                      
+   border:rgb(222, 235, 255) solid 0.15rem;
+    border-radius: 60%;
+    width:1.8rem;
+    height:1.8rem;
+    margin:-0.40rem;         
+    display:flex;
+    align-items:center;      /*centre l'icône à la vertical */
+    justify-content:center;  /* centre l'icône en horizontal */
+    
+    background-color:rgb(222, 235, 255);
+    
+    
+    
+    
+    
+
+}
+
+.filtresbutton a{
+padding-left:1rem;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+margin-right: 1rem;
+}
+
+.fas {
+    color: #3a88fd;
+}
+
+
+
+footer{
+    
+width:100%;
+background-color: #f2f2f2;
+}
+
+
+footer ul li{
+    list-style: none;
+
+}
+
+.limitationfooterin{
+    width:75%;
+    display: flex;
+    -ms-flex-align: start;
+    justify-content: space-between;
+    margin-top: 1rem;
+    align-items:baseline;
+    padding-left:2.2rem;
+    
+    flex-direction: row;
+}
+
+
+footer .up{
+    
+
+    flex-direction: column;
+    justify-content: flex-start;
+    
+   
+    
+    
+}
+
+
+footer .footertitre{
+
+    margin-bottom:0rem;
+    
+}
+
+footer .up ul{
+display:flex;
+    flex-direction: column;
+    padding:0rem;
+    
+   
+}
+
+
+
+footer a{
+color:black;
+}
+
+
 
 footer a{
     outline: none;
@@ -162,6 +241,3 @@ footer a{
     font-size:0.75rem;
 }
 
-.typonav p{
-
-}
