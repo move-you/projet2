@@ -5,40 +5,51 @@ body{
     padding:0;
 }
 
+.marges{
+    
+    padding-left:2.2rem;
+}
+
+
+/* Debut header Debut header  Debut header Debut header Debut header 
+Debut header Debut header Debut header Debut header Debut header*/
+
 header
 {
     width:100%;
     height:3rem;
     display:flex;
     flex-wrap:wrap;
-    
+    align-items: flex-start;
 
     justify-content:space-between;
-    margin-top: -0.1rem;
+    
 }
 
 header nav{
     height:100%;
-    width:30%;
+    
     display:flex;
     
     justify-content: flex-end;
-    margin-right:3rem;
     
+    background-color: brown;
 
 }
 
 
 nav ul{
-    display:inline-flex;
+    display:flex;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    
+    
 }
 
 nav ul li{
     display: flex;
 justify-content: center;
 align-items: center;
+min-width: 15rem;
 }
 
 nav ul li a {
@@ -51,18 +62,19 @@ nav ul li .p1 p{
 }
 
 nav ul li .p1 p:hover{
-   color: #3a88fd
+   color: #0065FC;
 }
 
-nav ul li a:hover{
+nav ul li:hover{
 
-border-top:0.50rem solid #3a88fd;
+
+
 }
 
 nav a {
     outline: none;
     text-decoration: none;
-    color: #116efc;
+    color: #0065FC;
     font-family: Verdana;
     font-size:0.8rem;
 }
@@ -87,20 +99,62 @@ header img{
     padding-left:2.2rem;
 }
 
-.filtres{
-    display:flex;
-    
-    width:65%;
-    align-items: baseline;
-    padding-left:2.2rem;
-   flex-wrap:wrap;
-   align-content: flex-start;
-   
-   
+nav ul li .bordernav{
+    background-color: #fff;
+    height: 0.5rem;
+    width:100%;
+}
+.bordernav:hover{
+background-color: #0065FC;
 }
 
-p{
-font-family: Arial, Helvetica, sans-serif;
+nav ul li:hover .bordernav{
+background-color: #0065FC;
+}
+nav ul li:hover p{
+    color: #0065FC;
+}
+.elementwrapernav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:100%;
+
+}
+
+
+/* début filtres  début filtres   début filtres  début filtres  début filtres 
+ début filtres  début filtres  début filtres  début filtres  */
+
+.filtres{
+    display:inline-flex;
+    
+    
+    align-items:stretch;
+    
+   flex-wrap:wrap;
+   align-content: flex-start;
+   height: 2.7rem;  /* modifié la taille de filres */
+   
+   background-color:#0065FC;
+  
+}
+
+.filtres a{
+    outline: none;
+    text-decoration: none;
+    font-family: Verdana;
+    font-size:0.75rem;
+}
+
+.filtres > * {
+    
+  }
+
+.filtres .titrefiltres{
+   
+   align-self: baseline;
+    
 }
 
 .filtres p{
@@ -108,9 +162,13 @@ font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9rem;
     color:black;
     
+    
 
 }
 
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    }
 
 
 
@@ -119,12 +177,13 @@ font-family: Arial, Helvetica, sans-serif;
 
 border:rgb(222, 235, 255) solid 0.15rem;
 display:inline-flex;
-border-radius:1.1rem;
+border-radius:5rem;
 align-items: center;
-height:2rem;
+height:100%;
 overflow: hidden;
 background-color: #ffffff;
 margin-left:1rem;
+width:auto;
 
 
 
@@ -136,16 +195,16 @@ margin-left:1rem;
 .filtresbutton i{
 
                                                       
-   border:rgb(222, 235, 255) solid 0.15rem;
+   border:#DEEBFF solid 0.15rem;
     border-radius: 60%;
-    width:1.8rem;
-    height:1.8rem;
+    width:2.5rem;                     /* valeur a modifié pour garder le cercle de l'icone quand on modifie la taille des filtres */
+    height:100%;
     margin:-0.40rem;         
     display:flex;
     align-items:center;      /*centre l'icône à la vertical */
     justify-content:center;  /* centre l'icône en horizontal */
     
-    background-color:rgb(222, 235, 255);
+    background-color:#DEEBFF;
     
     
     
@@ -163,10 +222,12 @@ margin-right: 1rem;
 }
 
 .fas {
-    color: #3a88fd;
+    color: #0065FC;
 }
 
 
+/* début footer  début footer  début footer  début footer  début footer 
+ début footer  début footer  début footer  début footer */
 
 footer{
     
@@ -180,7 +241,7 @@ footer ul li{
 
 }
 
-.limitationfooterin{
+.limitationfooterin{     /* footer wrapper */
     width:75%;
     display: flex;
     -ms-flex-align: start;
@@ -188,8 +249,7 @@ footer ul li{
     margin-top: 1rem;
     align-items:baseline;
     padding-left:2.2rem;
-    
-    flex-direction: row;
+ flex-direction: row;
 }
 
 
@@ -205,11 +265,7 @@ footer .up{
 }
 
 
-footer .footertitre{
 
-    margin-bottom:0rem;
-    
-}
 
 footer .up ul{
 display:flex;
@@ -234,10 +290,5 @@ footer a{
     font-size:0.75rem;
 }
 
-.filtres a{
-    outline: none;
-    text-decoration: none;
-    font-family: Verdana;
-    font-size:0.75rem;
-}
+
 
