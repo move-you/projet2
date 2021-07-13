@@ -465,6 +465,13 @@ margin-left: 2rem;
 
 
 }
+.ratepopulaire i::before{
+    line-height: 2.5rem;
+}
+
+.ratepopulaire{
+    margin-bottom: 0;
+}
 
 .hauteurdeligne .rate i::before{
     line-height: 2.5rem;
@@ -644,17 +651,14 @@ footer ul li p{
     margin-bottom: 2rem;
 }
 .assistance{
-    margin-right:33rem;
+
 }
 
 footer .up{
     
-
+    flex-grow: 1;
     flex-direction: column;
     justify-content: flex-start;
-    
-   
-    
     
 }
 
