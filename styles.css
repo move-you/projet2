@@ -230,7 +230,7 @@ width: 13.5rem;
 
 
     border-radius: 60%;
-    background-color: #0065FC;
+
 
 
 }
@@ -241,8 +241,8 @@ width: 13.5rem;
     background-color: #ffffff;
     border-radius: 60%;
 
-    height:2rem;
-    width: 2rem;
+    height:1.2rem;
+    width: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -421,6 +421,7 @@ padding-left: 2rem;
 
 .divafficherplus{
 margin-left: 2rem;
+    margin-bottom: 2rem;
     display: flex;
     align-items: center;
     align-content: center;
@@ -562,7 +563,7 @@ line-height:1rem;
     border-top-left-radius: 2rem;
 }
 
-article--populaire-container{
+.article--populaire-container{
     display:inline-flex;
     flex-direction: row;
 
