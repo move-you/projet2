@@ -3,9 +3,12 @@ body{
     width:100%;
     margin:0;
     padding:0;
-    
+    font-size: medium;
 
 }
+
+
+
 
 .marges{
     display:flex;
@@ -25,6 +28,10 @@ body{
 padding-left:0.5rem;
 }
 
+.flex-text p{
+    font-size: x-large;
+}
+
 
 /* Debut header Debut header  Debut header Debut header Debut header 
 Debut header Debut header Debut header Debut header Debut header*/
@@ -38,6 +45,7 @@ header
     align-items: flex-start;
 
     justify-content:space-between;
+    margin-bottom: 1.5rem;
     
 }
 
@@ -50,6 +58,11 @@ header nav{
     
 
 
+}
+
+header nav p{
+    font-family: Verdana, sans-serif;
+    font-size: small;
 }
 
 
@@ -204,6 +217,8 @@ width: 13.5rem;
     align-items: center;
     justify-content: space-between;
 
+    height:100%;
+    margin-bottom: 1.5rem;
 
 }
 
@@ -266,9 +281,13 @@ border-top-right-radius: 1rem;
     background-color: #f2f2f2;
 
 }
-.formulaire-recherche .titreformulaire{
-    font-size:x-large;
 
+.titreformulaire{
+    font-size:x-large;
+}
+
+.formulaire-recherche{
+    line-height: 0.4rem;
 }
 
 
@@ -285,14 +304,14 @@ border-top-right-radius: 1rem;
 
 
    height: 2.7rem;  /* modifié la taille de filres */
-  margin-bottom:2rem;
+  margin-bottom: 1.5rem;
 }
 
 .filtres a{
     outline: none;
     text-decoration: none;
     font-family: Verdana, sans-serif;
-    font-size:0.75rem;
+
 }
 
 .titrefiltres{
@@ -305,7 +324,7 @@ border-top-right-radius: 1rem;
 
 .filtres p{
     
-    font-size: 1.3rem;
+    font-size: medium;
     color:black;
     
     
@@ -314,6 +333,7 @@ border-top-right-radius: 1rem;
 
 p{
     font-family: Arial, Helvetica, sans-serif;
+
     }
 
 
@@ -399,8 +419,17 @@ padding-left: 2rem;
     flex-wrap: wrap;
 }
 
-.hebergement-wrapper .afficherplus{
+.divafficherplus{
 margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+}
+
+.afficherplus p{
+    font-family: Verdana, sans-serif;
+    font-size: medium;
 }
 
 .afficherplus:link{
@@ -413,7 +442,7 @@ margin-left: 2rem;
 .article-container{
 
 
-
+    width:5rem;
     background-color: #ffffff;
 
     border:0.1rem solid #ffffff;
@@ -442,6 +471,8 @@ margin-left: 2rem;
 }
 .hauteurdeligne p{
 margin-bottom: auto;
+    font-family: Verdana, sans-serif;
+    font-size: medium;
 }
 
 .ligne-hebergement{
@@ -487,7 +518,7 @@ background-color: #f2f2f2;
 }
 
 .article--populaire-container{
-    flex-grow:1;
+
     border:0.2rem solid #ffffff;
     border-radius: 2rem;
     display:inline-flex;
@@ -499,6 +530,16 @@ background-color: #f2f2f2;
     max-height:10rem;
     padding:0.20rem;
     background-color: white;
+}
+
+.article--populaire-container img{
+height: 10rem;
+width:10rem;
+}
+
+.article--populaire-container .img{
+
+    width:100%;
 }
 
 .populairetext p{
@@ -521,23 +562,31 @@ line-height:1rem;
     border-top-left-radius: 2rem;
 }
 
+article--populaire-container{
+    display:inline-flex;
+    flex-direction: row;
+
+}
+
 .article--populaire-container img{
-  flex-grow: 1;
+width:10rem;
 
     display: flex;
 overflow:hidden;
   border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
+
+
 }
 
 .article--populaire-container .img{
-    flex-grow: 2;
+
 }
 
 .article--populaire-textwrapper{
   display: flex;
     flex-direction: column;
-    flex-grow: 2;
+
     padding-left: 1rem;
     justify-content: space-between;
 
@@ -556,25 +605,46 @@ footer{
     
 width:100%;
 background-color: #f2f2f2;
+    font-family: Verdana, sans-serif;
+    font-size: large;
 }
 
 
 footer ul li{
     list-style: none;
+flex-grow: 1;
+    line-height: 0;
 
+
+}
+
+footer ul li p{
+    font-family: Verdana, sans-serif;
+    font-size: small;
+
+}
+
+.footertitre{
+    line-height: 0.5rem;
 }
 
 .limitationfooterin{     /* footer wrapper */
-    width:75%;
+
     display: flex;
     -ms-flex-align: start;
     justify-content: space-between;
-    margin-top: 1rem;
+    padding-top: 2rem;
     align-items:baseline;
-    padding-left:2.2rem;
+    padding-left:2.5rem;
  flex-direction: row;
 }
 
+.apropos{
+    margin-bottom: 2rem;
+}
+.assistance{
+    margin-right:33rem;
+}
 
 footer .up{
     
@@ -598,6 +668,11 @@ display:flex;
    
 }
 
+footer .up li a p{
+    font-size: medium;
+    font-family: Verdana, sans-serif;
+}
+
 
 
 footer a{
@@ -610,7 +685,7 @@ footer a{
     outline: none;
     text-decoration: none;
     font-family: Verdana, sans-serif;
-    font-size:0.75rem;
+    font-size: medium;
 }
 
 
