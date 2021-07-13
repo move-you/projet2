@@ -3,11 +3,16 @@ body{
     width:100%;
     margin:0;
     padding:0;
+
 }
 
 .marges{
-    
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
     padding-left:2.2rem;
+
 }
 
 
@@ -126,9 +131,103 @@ nav ul li:hover p{
     flex-direction: column;
     align-items: center;
     width:100%;
+    flex-wrap: nowrap;
 
 
 }
+
+/* bouton */
+
+.buttonwrap1{
+    display:flex;
+    flex-wrap: nowrap;
+
+    height:3rem;
+justify-content: flex-start;
+    align-items: stretch;
+
+    margin-bottom: 2rem;
+
+}
+
+.buttonwrap1 i{
+
+    display: inline-flex;
+    align-items: center;
+    justify-content:center;
+
+
+    height:100%;
+    border-top:0.2rem solid black;
+    border-bottom:0.2rem solid black;
+    border-left:0.2rem solid black;
+
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius:1rem;
+
+
+}
+
+.buttonwrap1 i::before{
+width:auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    border-top-left-radius: 60%;
+    border-bottom-left-radius: 60%;
+
+}
+
+.buttonwrap1 .fas{
+
+}
+
+.recherchetexte{
+    height:95%;
+    border: none;
+
+
+}
+
+.info{
+    display:flex;
+    margin-right:15rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info i{
+    padding-right:1rem;
+
+}
+.recherchebutton{
+    height: 3.4rem;
+    border-top:0.2rem solid black;
+    border-bottom:0.2rem solid black;
+    border-right:0.2rem solid black;
+    display: inline-flex;
+    align-items:center;
+
+
+border-top-right-radius: 1rem;
+    border-bottom-right-radius:1rem;
+
+
+
+
+}
+
+.recherchebutton p{
+    border-top-right-radius: 60%;
+    border-bottom-right-radius: 60%;
+    width: 5.6rem;
+}
+
+.formulaire-recherche i{
+    display: inline-flex;
+
+}
+
 
 
 /* début filtres  début filtres   début filtres  début filtres  début filtres 
@@ -143,7 +242,7 @@ nav ul li:hover p{
    flex-wrap:wrap;
    align-content: flex-start;
    height: 2.7rem;  /* modifié la taille de filres */
-   
+
 
   
 }
@@ -232,8 +331,147 @@ margin-right: 1rem;
 .fas {
     color: #0065FC;
 }
+/* début hébergement début hébergement début hébergement
+début hébergement début hébergement début hébergement */
+.border-hebergement{
+    border: 0.20rem solid #ffffff;
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    background-color: #f2f2f2;
+    margin-left: 2rem;
+    flex-grow: 4;
+
+}
+
+.hebergement-wrapper{
+
+    height:auto;
 
 
+
+    flex-wrap: wrap;
+
+
+
+
+}
+
+.article-container{
+
+
+
+    background-color: #ffffff;
+
+    border:0.1rem solid #ffffff;
+    border-radius: 2rem;
+
+
+
+    flex-grow: 1;
+    margin-left:2rem;
+    margin-bottom:2rem;
+
+
+}
+
+.ligne-hebergement{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 2rem;
+}
+
+.ligneun{
+
+}
+.lignedeux{
+
+}
+
+
+.article-container img{
+    width:100%;
+    height: 7rem;
+
+}
+
+/* debut aside */
+
+aside .populaire{
+background-color: #f2f2f2;
+    height:100%;
+    flex-grow: 4;
+    width:30rem;
+    border: 0.1rem solid #ffffff;
+    margin-left:2rem;
+    margin-right: 2rem;
+    border-radius:2rem;
+
+    display: inline-flex;
+    flex-direction: column;
+
+
+
+}
+
+.article--populaire-container{
+    flex-grow:1;
+    border:0.2rem solid #ffffff;
+    border-radius: 2rem;
+    display:inline-flex;
+    margin-bottom:2rem;  /* sur les conteneur inline-flex margin=marge inerieur - padding = marge exterieur */
+    margin-left:2rem;
+    margin-right: 2rem;
+
+
+    max-height:10rem;
+    padding:0.20rem;
+    background-color: white;
+
+}
+
+.populaireitem1{
+margin-top:2rem;
+}
+
+
+.article-container{
+    padding:0.30rem;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.article-container img{
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+.article--populaire-container img{
+  flex-grow: 1;
+
+    display: flex;
+overflow:hidden;
+  border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.article--populaire-container .img{
+    flex-grow: 2;
+}
+
+.article--populaire-textwrapper{
+  display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    padding-left: 1rem;
+
+}
+
+.middlepart{
+    display: flex;
+
+
+}
 /* début footer  début footer  début footer  début footer  début footer 
  début footer  début footer  début footer  début footer */
 
