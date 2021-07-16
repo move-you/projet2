@@ -175,7 +175,7 @@ justify-content: flex-start;
 
 .buttonwrap1 i{
 
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content:center;
 
@@ -339,19 +339,19 @@ p{
 
 
 .filtresbutton{
+border: none;
 
 
-border:rgb(222, 235, 255) solid 0.15rem;
 display:inline-flex;
-border-radius:5rem;
+
 align-items: center;
-height:100%;
-overflow: hidden;
+height:auto;
+
 background-color: #ffffff;
-margin-left:2rem;
+padding:0;
 width:auto;
     margin-bottom: 1rem;
-
+margin-left:1.5rem;
 
 
 
@@ -360,24 +360,27 @@ width:auto;
 
 
 .filtresbutton i{
+display: inline-flex;
+height: 2.5rem;
+    align-items: center;
+    border:rgb(222, 235, 255) solid 0.15rem;
+    border-bottom-right-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
 
-                                                      
-   border:#DEEBFF solid 0.15rem;
+
+}
+
+.filtresbutton i:before{
+    border:#DEEBFF solid 0.15rem;
     border-radius: 60%;
     width:2.5rem;                     /* valeur a modifié pour garder le cercle de l'icone quand on modifie la taille des filtres */
     height:100%;
-    margin:-0.40rem;         
+    margin-left: -1.5rem;
     display:flex;
     align-items:center;      /*centre l'icône à la vertical */
     justify-content:center;  /* centre l'icône en horizontal */
-    
-    background-color:#DEEBFF;
-    
-    
-    
-    
-    
 
+    background-color:#DEEBFF;
 }
 
 .filtresbutton a{
