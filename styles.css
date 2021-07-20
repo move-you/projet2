@@ -1,5 +1,6 @@
 body{
     background-color: #ffffff;
+    height:auto;
     width:100%;
     margin:0;
     padding:0;
@@ -7,17 +8,18 @@ body{
 
 }
 
+*,::before,::after {
 
+
+}
 
 
 .marges{
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding-left:2.2rem;
-    line-height: 1rem;
 
+
+    margin-right:1.5rem;
+    margin-left:1.5rem;
+    align-items: flex-start;
 }
 
 .margesbasdepage{
@@ -33,28 +35,30 @@ padding-left:0.5rem;
 }
 
 
+
+
 /* Debut header Debut header  Debut header Debut header Debut header 
 Debut header Debut header Debut header Debut header Debut header*/
 
 header
 {
-    width:100%;
-    height:3rem;
+
+    height:auto;
     display:flex;
     flex-wrap:wrap;
     align-items: flex-start;
-
+width: 100%;
     justify-content:space-between;
     margin-bottom: 1.5rem;
     
 }
 
 header nav{
-    height:3.2rem;  /* taille header + taille bordernav */
+    min-height:3.2rem;  /* taille header + taille bordernav */
 
     display:inline-flex;
     
-    justify-content: flex-end;
+    justify-content: space-between;
     
 
 
@@ -68,16 +72,179 @@ header nav p{
 
 nav ul{
     display:flex;
-    flex-wrap: nowrap;
-    
+
+    margin-top:0;
+    min-width:20rem;
     
 }
+
+@media screen and (max-width: 650px){
+    div.marges{
+
+    }
+    div.titrefiltres{
+        margin-right: auto;
+    }
+    .buttonwrap1{
+
+    }
+    button.recherchebutton{
+        width: 3rem;
+    }
+
+    button.recherchebutton p{
+        display: none;
+    }
+    button.recherchebutton i.fas{
+        visibility: visible
+    }
+
+    div.info{
+
+        margin: 0;
+        width: 100%;
+    }
+    .filtres{
+
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .ecofamirow{
+        margin-right:0;
+    }
+    .complementTitreForm{
+
+        margin-bottom:2rem;
+    }
+
+    .complementTitreForm p{
+
+    }
+
+
+    .fa-search{
+        color: purple;
+    }
+
+    button.searchicon{
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    .complementTitreForm{
+
+    }
+    .buttonwrap1{
+
+    }
+    .formulaire-recherche div.titreformulaire{
+        padding-left:0;
+    }
+     .titreformulaire {
+         display: flex;
+         max-width: 100%;
+
+         padding-left: 2rem;
+         flex-direction: column;
+         align-items: center;
+     }
+
+
+
+
+    nav{
+    width:500rem;
+    }
+    nav ul .sinscrire {
+    position: absolute;
+        top:0;
+        right:2rem;
+    }
+    .bordernavswitch{
+        order:2;
+    }
+
+    .marges{
+        padding:0;
+    }
+    nav ul{
+        width: 100%;
+        padding: 0;
+    }
+
+    div.elementwrapernav.none:hover{
+        border-bottom: 1px solid black;
+    }
+
+    header{
+padding: 0;
+    }
+
+    div.middlepart{
+        flex-wrap: wrap-reverse;
+        margin: 0;
+
+
+    }
+
+    aside{
+        width:100%;
+
+
+    }
+
+    aside div.populaire{
+        margin-left: 0;
+        background-color: #f2f2f2;
+        display: flex;
+
+
+    }
+
+    div.border-hebergement{
+        background-color: white;
+
+
+    }
+
+    div.border-hebergement .article-container{
+
+    }
+
+    footer ul li{
+        margin-right:5rem;
+    }
+
+    aside div.populaire{
+        border-radius: 0;
+    }
+    .filtres{
+        margin-left: 0;
+    }
+
+}
+
+
+
+
+
 
 nav ul li{
     display: flex;
 justify-content: center;
 align-items: center;
-width: 14rem;
+flex-grow:1;
+}
+
+nav ul li .topwrap{
+
 }
 
 nav ul li a {
@@ -131,6 +298,11 @@ header ul li{
 header img{
     height:2.5rem;
     width:auto;
+    padding-left:1.5rem;
+
+}
+
+nav ul li p{
 
 }
 
@@ -150,7 +322,7 @@ nav ul li:hover p{
     color: #0065FC;
 }
 .elementwrapernav{
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
     width:100%;
@@ -173,7 +345,16 @@ justify-content: flex-start;
 
 }
 
-.buttonwrap1 i{
+button.recherchebutton i.searchicon{
+
+}
+
+button.recherchebutton{
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+.buttonwrap1 i.localcolor{
 
     display: flex;
     align-items: center;
@@ -189,7 +370,7 @@ justify-content: flex-start;
 
 }
 
-.buttonwrap1 i::before{
+.buttonwrap1 i.localcolor::before{
 width:auto;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -213,17 +394,22 @@ width: 13.5rem;
 
 .info{
     display:inline-flex;
-    margin-right:15rem;
-    align-items: center;
-    justify-content: space-between;
 
-    height:100%;
-    margin-bottom: 1.5rem;
+    align-items: baseline;
+    justify-content: center;
+
+    height: auto;
 
 }
 
+.info i{
+    padding-left:2rem;
+}
+
 .info p{
-  padding-left: 0.4rem;
+  padding-left: 0.5rem;
+
+
 }
 
 .info i{
@@ -277,17 +463,30 @@ border-top-right-radius: 1rem;
 }
 
 .formulaire-recherche i{
-    display: inline-flex;
+    display: flex;
     background-color: #f2f2f2;
 
 }
 
+.formulaire-recherche i.searchicon{
+ color: white;
+    visibility: hidden;
+    background-color: #0065FC;
+}
+
+.localcolor:before{
+    color:black;
+}
 .titreformulaire{
     font-size:x-large;
+    line-height:1rem;
 }
 
 .formulaire-recherche{
     line-height: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 
@@ -297,14 +496,14 @@ border-top-right-radius: 1rem;
 
 .filtres{
     display:inline-flex;
-    
-    align-content: center;
 
+    align-content: space-around;
+   max-width: 100rem;
    flex-wrap:wrap;
 
 
-   height: 2.7rem;  /* modifié la taille de filres */
-  margin-bottom: 1.5rem;
+   height: auto;  /* modifié la taille de filres */
+  margin-bottom: 2rem;
 }
 
 .filtres a{
@@ -317,7 +516,7 @@ border-top-right-radius: 1rem;
 .titrefiltres{
     height: 100%;
     display: flex;
-
+    margin-right: 1rem;
     align-items: center;
 
 }
@@ -384,11 +583,12 @@ height: 2.5rem;
 }
 
 .filtresbutton a{
-padding-left:1rem;
+padding-left:0.5rem;
+    padding-right: 0.5rem;
 display: flex;
 justify-content: flex-start;
 align-items: center;
-margin-right: 1rem;
+
 }
 
 .fas {
@@ -411,16 +611,13 @@ padding-left: 2rem;
     flex-direction: column;
     border-radius: 2rem;
     background-color: #f2f2f2;
-    margin-left: 2rem;
-    flex-grow: 1;
+    padding:0;
+    flex-grow: 2;
+    margin-bottom: 0;
 
 }
 
-.hebergement-wrapper{
 
-    height:auto;
-    flex-wrap: wrap;
-}
 
 .divafficherplus{
 margin-left: 2rem;
@@ -446,7 +643,7 @@ margin-left: 2rem;
 .article-container{
 
 
-    width:5rem;
+
     background-color: #ffffff;
 
     border:0.1rem solid #ffffff;
@@ -457,9 +654,9 @@ margin-left: 2rem;
     flex-grow: 1;
     margin-left:2rem;
     margin-bottom:2rem;
-
-
 }
+
+
 .hauteurdeligne{
   line-height: 0.5rem;
     display:flex;
@@ -492,19 +689,9 @@ margin-bottom: auto;
     margin-right: 2rem;
 }
 
-.ligneun{
-
-}
-.lignedeux{
-
-}
 
 
-.article-container img{
-    width:100%;
-    height: 9rem;
 
-}
 
 /* debut aside */
 aside{
@@ -514,17 +701,17 @@ aside{
 aside .populaire{
 background-color: #f2f2f2;
     height:100%;
-    flex-grow: 4;
-    width:35rem;
-    border: 0.1rem solid #ffffff;
-    margin-left:2rem;
-    margin-right: 2rem;
-    border-radius:2rem;
 
+    min-width:14rem;
+
+    border: 0.1rem solid #ffffff;
+
+    border-radius:2rem;
+    margin-left: 2rem;
     display: inline-flex;
     flex-direction: column;
-
-
+    justify-content: stretch;
+padding: 0;
 
 }
 
@@ -545,7 +732,7 @@ background-color: #f2f2f2;
 
 .article--populaire-container img{
 height: 10rem;
-width:10rem;
+width:100%;
 }
 
 .article--populaire-container .img{
@@ -563,14 +750,20 @@ line-height:1rem;
 
 
 .article-container{
-    padding:0.30rem;
+    padding:0.10rem;
     display: inline-flex;
     flex-direction: column;
+
 }
 
 .article-container img{
+    display: flex;
+    justify-content: stretch;
+    margin: 0.30rem;
     border-top-right-radius: 2rem;
     border-top-left-radius: 2rem;
+    height:10rem;
+    min-width: 17rem;
 }
 
 .article--populaire-container{
@@ -581,7 +774,7 @@ line-height:1rem;
 
 .article--populaire-container img{
 width:10rem;
-
+height: 10rem;
     display: flex;
 overflow:hidden;
   border-top-left-radius: 2rem;
@@ -606,6 +799,10 @@ overflow:hidden;
 
 .middlepart{
     display: flex;
+   flex-wrap: nowrap;
+    margin-right: 2rem;
+    margin-left: 2rem;
+
 
 
 }
@@ -648,6 +845,7 @@ footer ul li p{
     align-items:baseline;
     padding-left:2.5rem;
  flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .apropos{
