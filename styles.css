@@ -214,9 +214,7 @@ padding: 0;
 
     }
 
-    div.border-hebergement .article-container{
 
-    }
 
     footer ul li{
         margin-right:5rem;
@@ -640,10 +638,9 @@ margin-left: 2rem;
 .afficherplus:visited{
     color:black;
 }
+
 .article-container{
-
-
-
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #f2f2f2;
     background-color: #ffffff;
 
     border:0.1rem solid #ffffff;
