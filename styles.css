@@ -252,7 +252,7 @@ button.recherchebutton{
     align-content: space-around;
     max-width: 100rem;
     flex-wrap:wrap;
-    height: auto;  /* modifié la taille de filres */
+    height: auto;
     margin-bottom: 2rem;
 }
 
@@ -302,7 +302,7 @@ p{
 .filtresbutton i:before{
     border:#DEEBFF solid 0.15rem;
     border-radius: 60%;
-    width:2.5rem;                     /* valeur a modifié pour garder le cercle de l'icone quand on modifie la taille des filtres */
+    width:2.5rem;
     height:100%;
     margin-left: -1.5rem;
     display:flex;
@@ -312,11 +312,11 @@ p{
 }
 
 .filtresbutton a{
-padding-left:0.5rem;
+    padding-left:0.5rem;
     padding-right: 0.5rem;
-display: flex;
-justify-content: flex-start;
-align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .fas {
@@ -324,7 +324,7 @@ align-items: center;
 }
 
 .faswhite{
-   color: #f2f2f2;
+    color: #f2f2f2;
 }
 
 /*debut middle part debut middle part debut middle part debut middle part
@@ -336,7 +336,7 @@ debut middle part debut middle part debut middle part debut middle part
 début hébergement début hébergement début hébergement */
 
 .hebergementText{
-padding-left: 2rem;
+    padding-left: 2rem;
     font-size: x-large;
 }
 
@@ -352,7 +352,7 @@ padding-left: 2rem;
 }
 
 .divafficherplus{
-margin-left: 2rem;
+    margin-left: 2rem;
     margin-bottom: 2rem;
     display: flex;
     align-items: center;
@@ -388,7 +388,7 @@ margin-left: 2rem;
   line-height: 0.5rem;
     display:flex;
     flex-direction: column;
- padding-left: 1rem;
+    padding-left: 1rem;
 }
 
 .ratepopulaire i::before{
