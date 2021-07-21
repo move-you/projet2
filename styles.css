@@ -62,7 +62,7 @@ margin-bottom:2rem;
 .activite-resize{
     flex-grow: 1;
     display: inline-flex;
-    max-width: 30rem;
+    max-width: 27rem;
     flex-direction: column;
 
 
@@ -92,7 +92,7 @@ div.activite-wrapper-in{
     border-top-right-radius: 2rem;
     border-top-left-radius: 2rem;
     height:22rem;
-    background-color: red;
+
 
 }
 .activite-container p{
@@ -121,7 +121,7 @@ width: 100%;
 
 header nav{
     min-height:3.2rem;  /* taille header + taille bordernav */
-
+    margin-right:2rem;
     display:inline-flex;
     
     justify-content: space-between;
