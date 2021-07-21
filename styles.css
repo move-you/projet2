@@ -7,6 +7,8 @@ body{
     font-size: medium;
 }
 
+/* marges marges marges marges marges marges marges
+ marges marges marges marges marges marges marges */
 
 .marges{
     margin-right:1.5rem;
@@ -14,76 +16,6 @@ body{
     align-items: flex-start;
 }
 
-.margesbasdepage{
-    padding-top:2rem;
-    padding-left:2rem;
-    padding-right: 2rem;
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-
-.margesbasdepage .flex-text{
-    padding-left:0.5rem;
-}
-
-.flex-text p{
-    font-size: x-large;
-}
-
-.activite-container{
-
-    box-shadow:0.5rem 0.5rem 0.5rem 0.5rem #f2f2f2;
-    border-radius: 2rem;
-    margin-bottom:2rem;
-
-}
-
-
-.activite-container .img{
-    border-radius: 2rem;
-    overflow: hidden;
-}
-
-
-.activite-container img{
-    flex-grow:1;
-}
-
-
-.activite-resize img{
-    width: 100%;
-    height: auto;
-}
-
-
-.activite-resize{
-    flex-grow: 1;
-    display: inline-flex;
-    max-width: 26rem;
-    flex-direction: column;
-}
-
-
-div.activite-wrapper{
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-
-div.activite-wrapper-in{
-    display: inline-flex;
-    flex-direction: column;
-}
-
-
-.activite-container img{
-    border-top-right-radius: 2rem;
-    border-top-left-radius: 2rem;
-    height:22rem;
-}
 
 /* Debut header Debut header  Debut header Debut header Debut header
 Debut header Debut header Debut header Debut header Debut header*/
@@ -118,170 +50,6 @@ nav ul{
     margin-top:0;
     min-width:20rem;
 }
-
-
-@media screen and (max-width: 650px){
-
-    div.titrefiltres{
-        margin-right: auto;
-    }
-
-    button.recherchebutton{
-        width: 3rem;
-    }
-
-    button.recherchebutton p{
-        display: none;
-    }
-    button.recherchebutton i.fas{
-        visibility: visible
-    }
-
-    div.info{
-        margin: 0;
-        width: 100%;
-    }
-
-    .filtres{
-        flex-direction: column;
-        margin-left: 0;
-    }
-
-    .ecofamirow{
-        margin-right:0;
-    }
-
-    .complementTitreForm{
-        margin-bottom:2rem;
-    }
-
-    .fa-search{
-        color: purple;
-    }
-
-    button.searchicon{
-        visibility: hidden;
-    }
-
-}
-
-
-
-@media screen and (max-width: 800px) {
-
-    .margesbasdepage{
-    margin-top:2rem;
-    }
-
-    .formulaire-recherche div.titreformulaire{
-        padding-left:0;
-    }
-
-     .titreformulaire {
-         display: flex;
-         max-width: 100%;
-
-         padding-left: 2rem;
-         flex-direction: column;
-         align-items: center;
-     }
-
-   .marges{
-       margin-top: 6rem;
-   }
-
-   .sinscrire div.bordernav{
-       display: none;
-   }
-
-    header{
-        position: fixed;
-        top:0;
-        background-color: white;
-    }
-
-    header ul{
-        margin-bottom: -0.5rem;
-    }
-
-    header nav{
-    width:500rem;
-        margin-right: 0;
-    }
-
-    nav ul .sinscrire {
-        position: absolute;
-        top:0;
-        right:2rem;
-    }
-
-    .bordernavswitch{
-        order:2;
-    }
-
-    .bordernav:active{    /* js necessaire pour ancre actives */
-        background-color: #0065FC;
-    }
-
-    nav ul li:active .bordernav{  /* js necessaire pour ancre actives */
-        background-color: #0065FC;
-    }
-
-    nav ul li div.bordernav{
-        background-color: #f2f2f2;
-    }
-
-    .marges{
-        padding:0;
-    }
-
-    nav ul{
-        width: 100%;
-        padding: 0;
-    }
-
-    div.elementwrapernav.none:hover{
-        border-bottom: 1px solid black;
-    }
-
-    header{
-    padding: 0;
-    }
-
-    div.middlepart{
-        flex-wrap: wrap-reverse;
-        margin: 0;
-    }
-
-    aside{
-        width:100%;
-    }
-
-    aside div.populaire{
-        margin-left: 0;
-        background-color: #f2f2f2;
-        display: flex;
-    }
-
-    div.border-hebergement{
-        background-color: white;
-    }
-
-    footer ul li{
-        margin-right:5rem;
-    }
-
-    aside div.populaire{
-        border-radius: 0;
-    }
-
-    .filtres{
-        margin-left: 0;
-    }
-
-}
-
-
 
 
 nav ul li{
@@ -356,8 +124,8 @@ nav ul li:hover p{
     width:100%;
     flex-wrap: nowrap;
 }
-
-/* bouton */
+                                   /*FIN NAV FIN HEADER NAV */
+                                  /*Début bouton DEBUT bouton */
 
 .buttonwrap1{
     display:flex;
@@ -430,11 +198,6 @@ button.recherchebutton{
     border: 0.20rem solid #f2f2f2;
 }
 
-
-
-
-
-
 .recherchebutton{
     height: auto;
     display: inline-flex;
@@ -481,8 +244,8 @@ button.recherchebutton{
 
 
 
-/* début filtres  début filtres   début filtres  début filtres  début filtres
- début filtres  début filtres  début filtres  début filtres  */
+                          /* début filtres  début filtres
+                            début filtres  début filtres  */
 
 .filtres{
     display:inline-flex;
@@ -563,6 +326,11 @@ align-items: center;
 .faswhite{
    color: #f2f2f2;
 }
+
+/*debut middle part debut middle part debut middle part debut middle part
+debut middle part debut middle part debut middle part debut middle part
+ */
+
 
 /* début hébergement début hébergement début hébergement
 début hébergement début hébergement début hébergement */
@@ -647,7 +415,23 @@ margin-left: 2rem;
     margin-right: 2rem;
 }
 
-/* debut aside */
+.article-container{
+    padding:0.10rem;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.article-container img{
+    display: flex;
+    justify-content: stretch;
+    margin: 0.30rem;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    height:10rem;
+    min-width: 17rem;
+}
+                                                      /*fin hebergement FIN HEBERGEMENT */
+                                                       /* debut aside DEBUT ASIDE */
 
 aside .populaire{
     background-color: #f2f2f2;
@@ -690,22 +474,6 @@ aside .populaire{
     margin-bottom:0.7rem;
 }
 
-.article-container{
-    padding:0.10rem;
-    display: inline-flex;
-    flex-direction: column;
-}
-
-.article-container img{
-    display: flex;
-    justify-content: stretch;
-    margin: 0.30rem;
-    border-top-right-radius: 2rem;
-    border-top-left-radius: 2rem;
-    height:10rem;
-    min-width: 17rem;
-}
-
 .article--populaire-container{
     display:inline-flex;
     flex-direction: row;
@@ -732,6 +500,81 @@ aside .populaire{
     flex-wrap: nowrap;
     margin-right: 2rem;
     margin-left: 2rem;
+}
+/*FIN MIDDLE PART FIN MIDDLE PART FIN MIDDLE PART FIN MIDDLE PART
+FIN MIDDLE PART FIN MIDDLE PART FIN MIDDLE PART FIN MIDDLE PART*/
+
+/* DEBUT ACTIVITE  DEBUT ACTIVITE  DEBUT ACTIVITE  DEBUT ACTIVITE
+ DEBUT ACTIVITE DEBUT ACTIVITE DEBUT ACTIVITE DEBUT ACTIVITE DEBUT ACTIVITE */
+
+.margesbasdepage{
+    padding-top:2rem;
+    padding-left:2rem;
+    padding-right: 2rem;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.margesbasdepage .flex-text{
+    padding-left:0.5rem;
+}
+
+.flex-text p{
+    font-size: x-large;
+}
+
+.activite-container{
+
+    box-shadow:0.5rem 0.5rem 0.5rem 0.5rem #f2f2f2;
+    border-radius: 2rem;
+    margin-bottom:2rem;
+
+}
+
+
+.activite-container .img{
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+
+.activite-container img{
+    flex-grow:1;
+}
+
+
+.activite-resize img{
+    width: 100%;
+    height: auto;
+}
+
+
+.activite-resize{
+    flex-grow: 1;
+    display: inline-flex;
+    max-width: 26rem;
+    flex-direction: column;
+}
+
+
+div.activite-wrapper{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+div.activite-wrapper-in{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+
+.activite-container img{
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    height:22rem;
 }
 
 
@@ -798,12 +641,176 @@ footer a{
     color:black;
 }
 
-    footer a{
+footer a{
     outline: none;
     text-decoration: none;
     font-family: Verdana, sans-serif;
     font-size: medium;
 }
+
+/*FIN FOOTER */
+/*debut media query */
+
+
+@media screen and (max-width: 650px){
+
+    div.titrefiltres{
+        margin-right: auto;
+    }
+
+    button.recherchebutton{
+        width: 3rem;
+    }
+
+    button.recherchebutton p{
+        display: none;
+    }
+    button.recherchebutton i.fas{
+        visibility: visible
+    }
+
+    div.info{
+        margin: 0;
+        width: 100%;
+    }
+
+    .filtres{
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .ecofamirow{
+        margin-right:0;
+    }
+
+    .complementTitreForm{
+        margin-bottom:2rem;
+    }
+
+    .fa-search{
+        color: purple;
+    }
+
+    button.searchicon{
+        visibility: hidden;
+    }
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    .margesbasdepage{
+        margin-top:2rem;
+    }
+
+    .formulaire-recherche div.titreformulaire{
+        padding-left:0;
+    }
+
+    .titreformulaire {
+        display: flex;
+        max-width: 100%;
+
+        padding-left: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .marges{
+        margin-top: 6rem;
+        padding:0;
+    }
+
+    .sinscrire div.bordernav{
+        display: none;
+    }
+
+    header{
+        position: fixed;
+        top:0;
+        background-color: white;
+    }
+
+    header ul{
+        margin-bottom: -0.5rem;
+    }
+
+    header nav{
+        width:500rem;
+        margin-right: 0;
+    }
+
+    nav ul .sinscrire {
+        position: absolute;
+        top:0;
+        right:2rem;
+    }
+
+    .bordernavswitch{
+        order:2;
+    }
+
+    .bordernav:active{    /* js necessaire pour ancre actives */
+        background-color: #0065FC;
+    }
+
+    nav ul li:active .bordernav{  /* js necessaire pour ancre actives */
+        background-color: #0065FC;
+    }
+
+    nav ul li div.bordernav{
+        background-color: #f2f2f2;
+    }
+
+    nav ul{
+        width: 100%;
+        padding: 0;
+    }
+
+    div.elementwrapernav.none:hover{
+        border-bottom: 1px solid black;
+    }
+
+    header{
+        padding: 0;
+    }
+
+    div.middlepart{
+        flex-wrap: wrap-reverse;
+        margin: 0;
+    }
+
+    aside{
+        width:100%;
+    }
+
+    aside div.populaire{
+        margin-left: 0;
+        background-color: #f2f2f2;
+        display: flex;
+    }
+
+    div.border-hebergement{
+        background-color: white;
+    }
+
+    footer ul li{
+        margin-right:5rem;
+    }
+
+    aside div.populaire{
+        border-radius: 0;
+    }
+
+    .filtres{
+        margin-left: 0;
+    }
+
+}
+
+/* FIN MEDIA QUERY */
 
 
 
