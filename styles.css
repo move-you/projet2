@@ -43,7 +43,7 @@ padding-left:0.5rem;
 
 .activite-container{
 
-box-shadow:0.2rem 0.2rem 0.2rem 0.2rem #f2f2f2;
+box-shadow:0.5rem 0.5rem 0.5rem 0.5rem #f2f2f2;
     border-radius: 2rem;
 margin-bottom:2rem;
 
@@ -204,6 +204,12 @@ nav ul{
 
 
 @media screen and (max-width: 800px) {
+.margesbasdepage{
+    margin-top:2rem;
+}
+    .hebergement{
+    }
+
 
     .complementTitreForm{
 
@@ -211,6 +217,7 @@ nav ul{
     .buttonwrap1{
 
     }
+
     .formulaire-recherche div.titreformulaire{
         padding-left:0;
     }
@@ -250,6 +257,19 @@ nav ul{
     .bordernavswitch{
         order:2;
     }
+    .bordernav:active{    /* js necessaire pour ancre actives */
+        background-color: #0065FC;
+    }
+
+    nav ul li:active .bordernav{  /* js necessaire pour ancre actives */
+        background-color: #0065FC;
+    }
+
+    nav ul li div.bordernav{
+        background-color: #f2f2f2;
+    }
+
+
 
     .marges{
         padding:0;
