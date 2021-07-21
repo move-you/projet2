@@ -62,8 +62,9 @@ margin-bottom:2rem;
 .activite-resize{
     flex-grow: 1;
     display: inline-flex;
-    max-width: 27rem;
+    max-width: 26rem;
     flex-direction: column;
+
 
 
 }
@@ -222,11 +223,24 @@ nav ul{
          align-items: center;
      }
 
+   .marges{
+       margin-top: 6rem;
+   }
+   .sinscrire div.bordernav{
+       display: none;
+   }
+    header{
+        position: fixed;
+        top:0;
+        background-color: white;
+    }
 
-
-
-    nav{
+    header ul{
+        margin-bottom: -0.5rem;
+    }
+    header nav{
     width:500rem;
+        margin-right: 0;
     }
     nav ul .sinscrire {
     position: absolute;
