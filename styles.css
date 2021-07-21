@@ -25,13 +25,79 @@ body{
 .margesbasdepage{
     padding-top:2rem;
     padding-left:2rem;
+    padding-right: 2rem;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+
 }
 .margesbasdepage .flex-text{
 padding-left:0.5rem;
+
 }
 
 .flex-text p{
     font-size: x-large;
+}
+
+.activite-container{
+
+box-shadow:0.2rem 0.2rem 0.2rem 0.2rem #f2f2f2;
+    border-radius: 2rem;
+margin-bottom:2rem;
+
+}
+.activite-container .img{
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.activite-container img{
+    flex-grow:1;
+}
+.activite-resize img{
+    width: 100%;
+    height: auto;
+}
+.activite-resize{
+    flex-grow: 1;
+    display: inline-flex;
+    max-width: 30rem;
+    flex-direction: column;
+
+
+}
+
+
+
+div.activite-wrapper{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.activite-wrapper-in .activite-container:nth-child(odd) {
+
+}
+
+div.activite-wrapper-in{
+    display: inline-flex;
+    flex-direction: column;
+
+
+}
+
+
+.activite-container img{
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    height:22rem;
+    background-color: red;
+
+}
+.activite-container p{
+
+
 }
 
 
