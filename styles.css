@@ -1060,7 +1060,7 @@ flex-grow: 2;
 
 
 }
-@media screen and  (max-width: 1708px){
+@media screen and  (max-width: 1714px){
     div.populaire{
         margin-inline-start: auto;
     }
@@ -1097,6 +1097,21 @@ flex-grow: 2;
         margin-top: 2rem;
     }
 
+}
+
+@media screen and (max-width: 1682px){
+div.populaire{
+    width:100%;
+    margin-top: 2rem;
+}
+
+    div.article-pop-rap{
+        flex-direction: row;
+
+    }
+    div.article--populaire-container{
+        flex-grow: 1;
+    }
 }
 
 /* FIN MEDIA QUERY */
