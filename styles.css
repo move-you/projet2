@@ -12,7 +12,11 @@ html p{
     line-height: 1.5rem;
 }
 
+div.activite-wrapper .titreactivite{
+    margin-left:0;
+    padding-left:0;
 
+}
 
 div.marge{
     padding-left:4rem;
@@ -73,7 +77,8 @@ nav a:hover a.bordernav{
 
 .logo{
     flex-grow:2;
-    margin-top:3.125rem;
+    margin-top:25px;
+
 
 }
 
@@ -273,6 +278,7 @@ div.complementTitreForm{
     align-items: baseline;
     justify-content: center;
     height: auto;
+    margin-bottom:2rem;
 }
 
 .info i{
@@ -392,7 +398,7 @@ div.activite-text-container{
 div.middlepart-wrapper{
     display:flex;
     height:auto;
-
+    margin-bottom:2rem;
 }
 
 /*hebergement*/
@@ -427,7 +433,7 @@ a.container-cliquable{
 
 div.img-container-grow{
     flex-grow:2;
-    background:green;
+
 
 }
 
@@ -460,6 +466,8 @@ div.h1{
     margin-left:0.9375rem;
     margin-bottom:0.9375rem;
     margin-top:0.9375rem;
+    font-weight: bold;
+    font-size:20px;
 }
 
 
@@ -487,10 +495,14 @@ aside.populaire-wrapper{
 
 aside .populaire-article-container{
     background:white;
-    height:9.375rem;
+    height:145px;
     margin: 0.9375rem 0.9375rem 1.875rem;
     border:6px solid white;
     overflow:hidden;
+}
+
+div.img-container-grow{
+
 }
 
 div.populaire-article-container .container-cliquable{
@@ -513,7 +525,9 @@ div.populaire-article-container .img-container-grow{
     width:8.125rem;
 }
 
-
+html body div.marge div.middlepart-wrapper aside.populaire-wrapper.boxradius.wrapperpadding div.populaire-article-container.boxradius.boxshadow a.container-cliquable div.populaire-text-container.rightboxradius p{
+    margin-top:0;
+}
 
 /*fin aside*/
 
@@ -530,7 +544,7 @@ div.h1:nth-child(2){
 div.activite-wrapper{
     display:flex;
     height:auto;
-
+    margin-bottom:2rem;
 
 }
 
@@ -727,7 +741,7 @@ div.footerpart ul a{
     @media (max-width:1000px){
 
         header{
-            position:fixed;
+            position:relative;
             top:0;
             left:0;
             right:0;
@@ -787,7 +801,7 @@ div.footerpart ul a{
         }
 
         div.marge{
-            margin-top:10.625rem;
+            margin-top:1rem;
         }
 
 
@@ -799,6 +813,7 @@ div.footerpart ul a{
             flex-direction:column;
             height:auto;
             margin:0;
+
         }
 
 
