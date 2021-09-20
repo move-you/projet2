@@ -963,6 +963,8 @@ div.footerpart ul a{
 
         html body div.marge div.formulaire-recherche div.buttonwrap1 button.recherchebutton{
             border-radius:1rem;
+            position: relative;
+            left:-1rem;
         }
 
 
