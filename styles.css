@@ -938,9 +938,18 @@ div.footerpart ul a{
             padding-right:1.25rem;
         }
 
-        div.recherchetexte{
-            width:14.375rem;
+        html body div.marge div.formulaire-recherche div.buttonwrap1 i.localcolor.fas.fa-map-marker-alt input.recherchetexte{
+
+padding-left: 18px;
+            font-weight: bold;
+            color: black;
+            font-size: medium;
         }
+
+        html body div.marge div.formulaire-recherche div.buttonwrap1 button.recherchebutton{
+            border-radius:1rem;
+        }
+
 
         section.formulaire-recherche{
             padding-right:1.25rem;
