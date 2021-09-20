@@ -184,101 +184,100 @@ div.complementTitreForm{
 
 /*fin recherche button*/
 /*debut filtres*/
+div.filtresection{
 
-.filtres{
+
+
     display:flex;
-    align-items: baseline;
-    max-width: 100rem;
-    flex-wrap:wrap;
-    height: auto;
+    flex-direction:row;
+    justify-content:flex-start;
 
-    justify-content: flex-start;
-}
-
-.filtres a{
-    outline: none;
-    text-decoration: none;
-
-}
-
-.titrefiltres{
-    height: 100%;
-    display: flex;
-    margin-right: 1rem;
-    align-items: center;
-    line-height: 1rem;
-}
-
-.filtres p{
-    font-size: large;
-    color:black;
-    font-family: 'Raleway', sans-serif;
-}
-
-
-
-.filtresbutton{
-    border: none;
-    display:inline-flex;
-    align-items: center;
     height:auto;
-    background-color:#ffffff;
-    padding:0;
     width:auto;
 
-    margin-left:1.875rem;
+
+    flex-wrap:wrap;
 }
 
-
-
-
-.filtresbutton i{
-    display: inline-flex;
-    height: 2.5rem;
-    align-items: center;
-    border:rgb(222, 235, 255) solid 0.15rem;
-    border-bottom-right-radius: 1.25rem;
-    border-top-right-radius: 1.25rem;
-}
-
-.filtresbutton i:before{
-    border:#DEEBFF solid 0.15rem;
-    border-radius: 60%;
-    width:2.5rem;
-    height:100%;
-    margin-left: -1.5rem;
+.filtressection__cliquable__button{
     display:flex;
-    align-items:center;      /*centre l'icône à la vertical */
-    justify-content:center;  /* centre l'icône en horizontal */
+    align-items:center;
+
+    height:50px;
+
+    border-radius:2rem;
+    border:#DEEBFF solid 0.15rem;
+
+    background:white;
+
+
+}
+
+div.filtressection__cliquable__button__icone{
+    overflow:hidden;
+
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+    left:-3px;
+
+    border:#DEEBFF solid 0.15rem;
     background-color:#DEEBFF;
 }
 
-.filtresbutton a{
-    padding-left:0.5rem;
-    padding-right: 0.5rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+i{
+
+
+
 }
 
-.fas {
-    color: #0065FC;
+i::before{
+    color:blue;
+
+    display:flex;
+    justify-content:center;
+
+
+
 }
 
-.faswhite{
-    color: #f2f2f2;
+div.filtresection a{
+    margin-right:24px;
+    text-decoration:none;
+
 }
+
+div.filtressection__cliquable__button p{
+    margin-left:10px;
+    margin-right:24px;
+    color:black;
+
+
+}
+
+div.titrefiltres{
+    margin-right:33px;
+}
+
 
 /*fin filtres*/
 
 /*info */
 
-.info{
-    display:inline-flex;
+html body div.marge div.info{
+    display:flex;
     align-items: baseline;
-    justify-content: center;
+
     height: auto;
     margin-bottom:2rem;
+    flex-direction: row;
+
+
 }
 
 .info i{
@@ -846,7 +845,6 @@ div.footerpart ul a{
 
         nav div.logo{
             margin-left:1.25rem;
-            margin-left:0;
         }
 
 
@@ -854,9 +852,25 @@ div.footerpart ul a{
             padding-left:0;
         }
 
+        div.formulaire-recherche{
+            padding-right: 20px;
+            padding-left:20px;
+        }
+
         div.titrefiltres{
             margin-left:0;
-            margin-right:5rem;
+            width:100%;
+            margin-right: 5000px;
+        }
+        .filtresection > a:nth-child(4) {
+            margin-right:300px;
+        }
+
+        .filtresection > a:nth-child(5){
+            margin-right: 100px;
+        }
+        div.filtresection > a:nth-child(2), .filtresection > a:nth-child(3) {
+            margin-right:10px;
         }
 
 
@@ -866,24 +880,7 @@ div.footerpart ul a{
             padding-right:1.25rem;
         }
 
-        button.filtresbutton{
-            margin-bottom:0.9375rem;
-        }
 
-        button.filtresbutton:nth-child(4){
-            margin-left:1.25rem;
-        }
-
-        button.filtresbutton:nth-child(3){
-            margin-left:1.25rem;
-        }
-
-        button.filtresbutton:nth-child(1){
-            margin-left:1.25rem;
-        }
-        button.filtresbutton:nth-child(2){
-            margin-left:1.25rem;
-        }
         .hebergement-second-wrapper{
             flex-direction:column;
         }
