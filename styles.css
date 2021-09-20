@@ -252,7 +252,7 @@ div.filtressection__cliquable__button p{
 
 
 i::before{
-    color:blue;
+    color:#0065FC;
 
     display:flex;
     justify-content:center;
@@ -964,7 +964,9 @@ div.footerpart ul a{
             display:none;
         }
 
-
+        html body div.marge div#activite.h1.titreactivite{
+           padding-left: 20px;
+        }
 
         i.searchicon::before{
             color:white;
