@@ -6,6 +6,7 @@ html a{
 html{
     line-height:0.4em;
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 
 html p{
@@ -199,6 +200,10 @@ div.filtresection{
     flex-wrap:wrap;
 }
 
+div.filtresection a{
+    margin-bottom: 1rem;
+}
+
 .filtressection__cliquable__button{
     display:flex;
     align-items:center;
@@ -235,6 +240,16 @@ i{
 
 
 }
+div.filtresection div.titrefiltres p
+{
+    font-size: medium;
+    font-weight: bold;
+}
+div.filtressection__cliquable__button p{
+
+    font-weight: bold;
+}
+
 
 i::before{
     color:blue;
@@ -872,7 +887,9 @@ div.footerpart ul a{
         div.filtresection > a:nth-child(2), .filtresection > a:nth-child(3) {
             margin-right:10px;
         }
-
+        div.filtresection > a:nth-child(3){
+            margin-right:0;
+        }
 
         aside.populaire-wrapper{
             border-radius:0;
