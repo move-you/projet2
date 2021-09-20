@@ -795,7 +795,7 @@ div.footerpart ul a{
         }
 
         a.bordernav{
-            border-bottom:0.1875rem solid white;
+            border-bottom:0.1875rem solid #f2f2f2;
             padding-bottom:0.9375rem;
             padding-top:2.5rem;
         }
